@@ -11,6 +11,7 @@ import Events from './pages/Events';
 import Effct from './pages/Effct';
 import Conditions from './pages/Conditions';
 import Contxt from './pages/Contxt';
+import Reducr from './pages/Reducr';
 
 function App() {
 
@@ -48,6 +49,7 @@ function App() {
   <Route path="/effct" element={<Effct />} />
   <Route path="/cond" element={<Conditions />} />
   <Route path="/contxt" element={<Contxt />} />
+  <Route path="/reducr" element={<Reducr />} />
   </Routes>
 </Router>
 
