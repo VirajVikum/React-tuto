@@ -12,6 +12,7 @@ import Effct from './pages/Effct';
 import Conditions from './pages/Conditions';
 import Contxt from './pages/Contxt';
 import Reducr from './pages/Reducr';
+import Ref from './pages/Ref';
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
   <Route path="/cond" element={<Conditions />} />
   <Route path="/contxt" element={<Contxt />} />
   <Route path="/reducr" element={<Reducr />} />
+  <Route path="/ref" element={<Ref />} />
   </Routes>
 </Router>
 
