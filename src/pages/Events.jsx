@@ -7,6 +7,10 @@ export default function Events() {
         alert('button clicked');
     }
 
+    const handleInputChange = (event, name, age, obj)=>{
+      console.log(event.target.value, name, age, obj);
+    }
+
   return (
     <>
     
@@ -15,6 +19,15 @@ export default function Events() {
 
     <button onClick={buttonClick}>click me</button>
     {/* <button onClick={buttonClick()}>click me</button> run when load */}
+
+    <button onClick={()=>{
+      console.log('annonimous function');
+    }}>Annonimous button</button>
+
+{/* <input type="text" onChange={handleInputChange} /> */}
+    <input type="text" onChange={(event)=>handleInputChange(event,'vj',25,{})} />
+
+    
 
     </>
 

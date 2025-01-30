@@ -1,6 +1,6 @@
 import './App.css';
-// import PartOne from './components/PartOne';
-// import Parametrs from './components/Parametrs';
+import PartOne from './components/PartOne';
+import Parametrs from './components/Parametrs';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -9,22 +9,30 @@ import Num from './pages/Num';
 import Bootstrp from './pages/Bootstrp';
 import Events from './pages/Events';
 import Effct from './pages/Effct';
+import Conditions from './pages/Conditions';
+import Contxt from './pages/Contxt';
 
 function App() {
+
+  const handleOnupdate = (message, age) => {
+    console.log(age);
+  }
 
   return (
     <div className="App">
 
       {/* props */}
 
-      {/* <PartOne />
+      {/* <PartOne /> */}
 
-      <Parametrs name="VJ" school="ACC"/>
-      <Parametrs name="VRJ" school="CC" />
+      <Parametrs name="VJ" school="ACC" onUpdateClicked={handleOnupdate} />
+
+      <Parametrs name="VRJ" school='4' />
       <Parametrs name="Props">
       Children Props
-      <button>childrn prp</button> </Parametrs> */}
+      <button>childrn prp</button> </Parametrs>
 
+<hr />
 
 {/* routes */}
 
@@ -38,6 +46,8 @@ function App() {
   <Route path="/bootstrp" element={<Bootstrp />} />
   <Route path="/evnt" element={<Events />} />
   <Route path="/effct" element={<Effct />} />
+  <Route path="/cond" element={<Conditions />} />
+  <Route path="/contxt" element={<Contxt />} />
   </Routes>
 </Router>
 

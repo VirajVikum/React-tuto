@@ -16,6 +16,11 @@ export default function Num() {
         setCount(count-1);
     }
 
+    const randmValue = () => {
+      setCount(Math.random());
+    }
+
+
   return (
     <div>
         <h1>Realtime updating</h1>
@@ -25,6 +30,10 @@ export default function Num() {
         <button onClick={increment}>+</button>
         <span> {count} </span>
         <button onClick={decrement}>-</button>
+
+<hr />
+
+        <button onClick={randmValue}>Random</button>
 
     </div>
 
