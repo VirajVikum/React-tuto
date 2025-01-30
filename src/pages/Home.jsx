@@ -16,6 +16,7 @@ export default function Home() {
 <h5>Link to <Link to={"/contxt"}>useContext Hook</Link></h5>
 <h5>Link to <Link to={"/reducr"}>useReducer Hook</Link></h5>
 <h5>Link to <Link to={"/ref"}>useRef Hook</Link></h5>
+<h5>Link to <Link to={"/clbk"}>useCallBack Hook</Link></h5>
 
     </div>
   )

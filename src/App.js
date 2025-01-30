@@ -13,6 +13,7 @@ import Conditions from './pages/Conditions';
 import Contxt from './pages/Contxt';
 import Reducr from './pages/Reducr';
 import Ref from './pages/Ref';
+import Callbck from './pages/Callbck';
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
   <Route path="/contxt" element={<Contxt />} />
   <Route path="/reducr" element={<Reducr />} />
   <Route path="/ref" element={<Ref />} />
+  <Route path="/clbk" element={<Callbck />} />
   </Routes>
 </Router>
 
