@@ -39,7 +39,7 @@ export default function Callbck() {
         <h3>{count}</h3>
 
         <br />
-        {showNumber()}<br />   {/* only in call back--> return the function */}
+        {/* {showNumber()}<br />   only in call back--> return the function */}
         {showNumber}<br />   {/* memo--> return the function */}
         
 

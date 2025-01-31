@@ -14,6 +14,7 @@ import Contxt from './pages/Contxt';
 import Reducr from './pages/Reducr';
 import Ref from './pages/Ref';
 import Callbck from './pages/Callbck';
+import Forms from './pages/Forms';
 
 function App() {
 
@@ -54,6 +55,7 @@ function App() {
   <Route path="/reducr" element={<Reducr />} />
   <Route path="/ref" element={<Ref />} />
   <Route path="/clbk" element={<Callbck />} />
+  <Route path="/frm" element={<Forms />} />
   </Routes>
 </Router>
 
